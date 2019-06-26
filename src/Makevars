@@ -1,0 +1,5 @@
+BEACHMAT_LIBS=`echo 'beachmat::pkgconfig("PKG_LIBS")'|\
+    "${R_HOME}/bin/R" --vanilla --slave`
+PKG_LIBS=$(BEACHMAT_LIBS)
+PKG_LIBS = $(BEACHMAT_LIBS)  -lstdc++
+CXX_OBJS = RcppExports.o readInput.o
